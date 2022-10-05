@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+  database: 
+    image: postgres
+    container_name: db_pizza
+    restart: always
+    ports: 
+      - 5433:5432
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=pizzadb
+    volumes:
+      - pgdata:/data/postgres
+
+volumes:
+  pgdata:
+    driver: local
