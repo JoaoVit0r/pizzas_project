@@ -6,7 +6,7 @@
   "description": "API Rest to publish pizza posts",
   "author": "Joao Vitor",
   "scripts": {
-    "dev": "nodemon src/index.js"
+    "dev": "nodemon --inspect src/index.js"
   },
   "dependencies": {
     "express": "^4.18.1"
